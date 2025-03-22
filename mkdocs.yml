@@ -4,6 +4,7 @@ copyright: 'github/x: @captradeoff'
 site_author: captradeoff
 repo_url: https://github.com/captradeoff/d-sys-wiki  
 edit_uri: edit/master/docs/
+docs_dir: wiki
 
 nav:
     - home: 'index.md'

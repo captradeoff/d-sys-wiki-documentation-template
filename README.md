@@ -1,44 +1,41 @@
 # d-sys.wiki
 
-[![GitHub license](https://img.shields.io/github/license/captradeoff/d-sys-wiki)](https://github.com/captradeoff/d-sys-wiki/blob/master/LICENSE)
+[![github license](https://img.shields.io/github/license/captradeoff/d-sys-wiki)](https://github.com/captradeoff/d-sys-wiki/blob/master/LICENSE)
 
-**d-sys.wiki** is your comprehensive resource for all things related to distributed systems. This repository contains the source code for the [d-sys.wiki](https://d-sys.wiki) website, which provides accessible explanations, resources, and tools for understanding, architecting, and building distributed systems.
+**d-sys.wiki** is a resource for distributed systems. this repo contains the source for [d-sys.wiki](https://d-sys.wiki) website, providing explanations, resources, and tools for understanding and building distributed systems.
 
-## 📚 Content
+## 📚 content
 
-The wiki includes:
+- simple explanations of distributed systems concepts
+- pre-prints on distributed systems research
+- case studies with code examples
+- open source projects and tools
+- links to books and talks
 
-- Simple, casual explanations of distributed systems concepts
-- Early access to pre-prints on distributed systems research
-- Case studies with reproducible research and code examples
-- Information about open source projects, software, and tools
-- Curated links to top books and talks in the field
-- And more!
+## 🚀 getting started
 
-## 🚀 Getting Started
+### for readers
 
-### For Readers
+visit [d-sys.wiki](https://d-sys.wiki) to access the content.
 
-Visit [d-sys.wiki](https://d-sys.wiki) to access the published content.
+### for contributors
 
-### For Contributors and Local Development
+built with [mkdocs](https://www.mkdocs.org/) using terminal theme.
 
-This wiki is built using [MkDocs](https://www.mkdocs.org/) with the terminal theme.
+#### prerequisites
 
-#### Prerequisites
+- python 3.x
+- pip
 
-- Python 3.x
-- pip (Python package manager)
+#### local setup
 
-#### Local Setup
-
-1. Clone the repository:
+1. clone the repo:
    ```bash
    git clone https://github.com/captradeoff/d-sys-wiki.git
    cd d-sys-wiki
    ```
 
-2. Install MkDocs and required plugins:
+2. install mkdocs and plugins:
    ```bash
    pip install mkdocs
    pip install mkdocs-terminal
@@ -46,50 +43,48 @@ This wiki is built using [MkDocs](https://www.mkdocs.org/) with the terminal the
    pip install mkdocs-spellcheck-plugin
    ```
 
-3. Run the development server:
+3. run dev server:
    ```bash
    mkdocs serve
    ```
 
-4. Open your browser and navigate to `http://localhost:8000` to see the local version of the wiki.
+4. open browser to `http://localhost:8000`
 
-## 📝 Contributing
+## 📝 contributing
 
-Contributions to d-sys.wiki are welcome and appreciated! Here's how you can contribute:
+1. **report issues**: [open an issue](https://github.com/captradeoff/d-sys-wiki/issues)
 
-1. **Report Issues**: If you find errors or have suggestions, please [open an issue](https://github.com/captradeoff/d-sys-wiki/issues).
+2. **submit content**:
+   - fork the repo
+   - create a branch
+   - edit markdown in `wiki/`
+   - submit pull request
 
-2. **Submit Content**: To add or modify content:
-   - Fork the repository
-   - Create a new branch for your changes
-   - Make your changes to the relevant Markdown files in the `docs/` directory
-   - Submit a pull request
+3. **guidelines**:
+   - write clearly
+   - include examples
+   - cite sources
+   - follow existing format
 
-3. **Content Guidelines**:
-   - Write in a clear, accessible style
-   - Include examples where appropriate
-   - Cite sources for technical information
-   - Follow the existing formatting conventions
-
-## 🏗️ Project Structure
+## 🏗️ project structure
 
 ```
 d-sys-wiki/
-├── docs/                  # Documentation source files
-│   ├── index.md           # Home page
-│   ├── about/             # About section
-│   ├── fundamentals/      # Fundamental concepts
-│   └── img/               # Images and resources
-├── mkdocs.yml             # MkDocs configuration
-├── CNAME                  # Custom domain configuration
-└── LICENSE                # MIT License
+├── wiki/                  # docs source files
+│   ├── index.md           # home page
+│   ├── about/             # about section
+│   ├── fundamentals/      # concepts
+│   └── img/               # images
+├── mkdocs.yml             # config
+├── CNAME                  # domain config
+└── LICENSE                # mit license
 ```
 
-## 📄 License
+## 📄 license
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+mit license - see [license](LICENSE) file.
 
-## 📬 Contact
+## 📬 contact
 
-- GitHub: [@captradeoff](https://github.com/captradeoff)
-- Twitter/X: [@captradeoff](https://x.com/captradeoff)
+- github: [@captradeoff](https://github.com/captradeoff)
+- twitter/x: [@captradeoff](https://x.com/captradeoff)
