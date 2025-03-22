@@ -6,6 +6,7 @@ edit_uri: edit/master/docs/
 plugins:
   - search
   - git-revision-date
+  - spellcheck:
 
 theme:
   name: terminal
