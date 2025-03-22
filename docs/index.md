@@ -1,14 +1,31 @@
-# welcome
+---
+hide:
+    - revision_date
+    - revision_history
+---
 
-this is your home for all things distributed systems!
+# d-sys.wiki
+**d-sys.wiki** is your home for all things *distributed systems*.  
 
-make change requests using our [issue tracker](https://github.com/captradeoff/d-sys-wiki/issues).
+in addition to simple casual explanations on how to architect and build distributed systems, **d-sys.wiki** also provides: 
 
-contribute by [forking this repository](https://github.com/captradeoff/d-sys-wiki/fork) and raising a [pull request](https://github.com/captradeoff/d-sys-wiki/pulls).
+- early access to pre-prints on distributed systems
+- case studies of reproducible research with code
+- open source projects, software and tools
+- links to top books and talks
+- open to contributions
+- and more!
 
-## contents
-nothing here yet.
+## developer info
+[d-sys.wiki on GitHub](https://github.com/captradeoff/d-sys-wiki)
 
-site is still under construction.
+- [d-sys.wiki issue tracker](https://github.com/captradeoff/d-sys-wiki/issues)
+- [fork this repository](https://github.com/captradeoff/d-sys-wiki/fork)
+- raise a [pull request](https://github.com/captradeoff/d-sys-wiki/pulls) 
 
-check us out on [github](https://github.com/captradeoff) or [x](https://x.com/captradeoff).
+[GitHub](https://github.com/captradeoff) 
+[X](https://x.com/captradeoff)
+
+
+### license
+[MIT license](about/license.md)

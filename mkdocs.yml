@@ -1,7 +1,12 @@
 site_name: d-sys.wiki
-
+site_url: https://d-sys.wiki
+copyright: 'github/x: @captradeoff'
+site_author: captradeoff
 repo_url: https://github.com/captradeoff/d-sys-wiki  
 edit_uri: edit/master/docs/
+
+nav:
+    - Home: 'index.md'
 
 plugins:
   - search
