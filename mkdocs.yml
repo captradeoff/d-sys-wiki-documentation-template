@@ -1,4 +1,18 @@
 site_name: d-sys.wiki
+
+repo_url: https://github.com/captradeoff/d-sys-wiki  
+edit_uri: edit/master/docs/
+
+plugins:
+  - search
+  - git-revision-date
+
 theme:
   name: terminal
   palette: gruvbox_dark
+  features:
+    - footer.prev_next
+    - navigation.side.indexes
+    - navigation.top.cursor_animation.hide
+    - revision.date
+    - revision.history
