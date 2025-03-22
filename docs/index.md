@@ -5,7 +5,7 @@ hide:
 ---
 
 # d-sys.wiki
-**d-sys.wiki** is your home for all things *distributed systems*.  
+**d-sys.wiki** is your home for all things [distributed systems](/fundamentals/distributed-systems).  
 
 in addition to simple casual explanations on how to architect and build distributed systems, **d-sys.wiki** also provides: 
 

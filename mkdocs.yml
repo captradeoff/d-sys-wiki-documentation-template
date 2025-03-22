@@ -6,8 +6,9 @@ repo_url: https://github.com/captradeoff/d-sys-wiki
 edit_uri: edit/master/docs/
 
 nav:
-    - Home: 'index.md'
-
+    - home: 'index.md'
+    - fundamentals:
+       - 'what are distributed systems?': 'fundamentals/distributed-systems.md'
 plugins:
   - search
   - git-revision-date
