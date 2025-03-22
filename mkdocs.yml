@@ -1,1 +1,4 @@
 site_name: d-sys.wiki
+theme:
+  name: terminal
+  palette: gruvbox_dark
