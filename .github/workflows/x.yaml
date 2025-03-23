@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: x post step
         id: x
-        uses: captradeoff/x-post-action@v0.2
+        uses: captradeoff/x-post-action@v0.3
         with:
           message: 'getting set up'
           community-id: 1903531139035476424
