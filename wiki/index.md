@@ -6,7 +6,7 @@ hide:
 
 # d-sys.wiki
 
-**d-sys.wiki** is your home for all things [distributed systems](/fundamentals/distributed-systems).
+**d-sys.wiki** is your home for all things [distributed systems](/fundamentals).
 
 ## purpose
 
