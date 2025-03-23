@@ -42,6 +42,7 @@ built with [mkdocs](https://www.mkdocs.org/) using terminal theme.
    pip install mkdocs-git-revision-date-plugin
    pip install mkdocs-spellcheck-plugin
    pip install mkdocs-llmstxt
+   pip install mkdocs-rss-plugin
    ```
 
 3. run dev server:

@@ -11,7 +11,10 @@ nav:
   - fundamentals:
       - Index: "fundamentals/index.md"
   - llms: "llms.txt"
+  - rss: "feed_rss_updated.xml"
+  
 plugins:
+  - rss
   - llmstxt:
       files:
         - output: llms.txt
@@ -23,6 +26,7 @@ plugins:
 
 theme:
   name: terminal
+  custom_dir: theme
   palette: gruvbox_dark
   features:
     - footer.prev_next
