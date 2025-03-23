@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
+
       - name: Get diff
         id: get-diff
         run: |
@@ -33,15 +33,22 @@ jobs:
             echo "$TRIMMED_DIFF" >> $GITHUB_OUTPUT
             echo "EOF" >> $GITHUB_OUTPUT
           fi
-          
+
       - name: Explain Diff
         id: explain
         if: steps.get-diff.outputs.has_changes == 'true'
-        uses: captradeoff/openai-summarize-diff-action@v0.2
+        uses: captradeoff/openai-summarize-diff-action@v0.7
         with:
           diff: ${{ steps.get-diff.outputs.diff }}
           apikey: ${{ secrets.OPENAI_APIKEY }}
-          
+          maxTokens: 50
+          maxCharacters: 140
+          examplePostSummary: |-
+            wiki content updated:
+              - cap theorem: what it means, how to apply it
+              - use cases for a distributed database
+              - code sample of a load balancer
+
       - name: x post step
         id: x
         if: steps.get-diff.outputs.has_changes == 'true'
@@ -53,7 +60,7 @@ jobs:
           accessSecret: ${{ secrets.X_ACCESS_SECRET }}
           message: ${{ steps.explain.outputs.explanation }}
           community-id: "1903531139035476424"
-          
+
       - name: Get the output post-id
         if: steps.get-diff.outputs.has_changes == 'true'
         run: echo "The post-id was ${{ steps.x.outputs.post-id }}"
