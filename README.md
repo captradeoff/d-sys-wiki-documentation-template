@@ -1,7 +1,7 @@
 # d-sys.wiki
 
 [![ci](https://github.com/captradeoff/d-sys-wiki/actions/workflows/ci.yml/badge.svg)](https://github.com/captradeoff/d-sys-wiki/actions/workflows/ci.yml)
-[![github license](https://img.shields.io/github/license/captradeoff/d-sys-wiki)](https://github.com/captradeoff/d-sys-wiki/blob/master/LICENSE)
+[![license: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 **d-sys.wiki** is a resource for distributed systems. this repo contains the source for [d-sys.wiki](https://d-sys.wiki) website, providing explanations, resources, and tools for understanding and building distributed systems.
 
