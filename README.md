@@ -91,3 +91,79 @@ mit license - see [license](LICENSE) file.
 
 - github: [@captradeoff](https://github.com/captradeoff)
 - twitter/x: [@captradeoff](https://x.com/captradeoff)
+
+# Twitter Post Action
+
+A GitHub Action to post tweets to Twitter, with optional community support.
+
+## Inputs
+
+| Input         | Description                                               | Required |
+|---------------|-----------------------------------------------------------|----------|
+| appKey        | Twitter API App Key                                       | Yes      |
+| appSecret     | Twitter API App Secret                                    | Yes      |
+| accessToken   | Twitter API Access Token                                  | Yes      |
+| accessSecret  | Twitter API Access Secret                                 | Yes      |
+| message       | The message to tweet                                      | Yes      |
+| community-id  | Optional Twitter Community ID to post to                  | No       |
+
+## Outputs
+
+| Output  | Description                |
+|---------|----------------------------|
+| post-id | The ID of the posted tweet |
+
+## Example Usage
+
+```yaml
+name: Post to Twitter
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *'  # Posts at 12:00 UTC every day
+
+jobs:
+  post-tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post to Twitter
+        uses: your-username/twitter-post-action@v1
+        with:
+          appKey: ${{ secrets.TWITTER_API_KEY }}
+          appSecret: ${{ secrets.TWITTER_API_SECRET }}
+          accessToken: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          accessSecret: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          message: "Hello world from GitHub Actions! #Automation"
+          # Uncomment if posting to a community:
+          # community-id: ${{ secrets.TWITTER_COMMUNITY_ID }}
+```
+
+## Development
+
+### Testing
+
+To run tests:
+
+```bash
+npm install
+npm test
+```
+
+### Local Testing
+
+You can test this action locally by setting up environment variables for your Twitter API credentials:
+
+```bash
+export INPUT_APPKEY=your_app_key
+export INPUT_APPSECRET=your_app_secret
+export INPUT_ACCESSTOKEN=your_access_token
+export INPUT_ACCESSSECRET=your_access_secret
+export INPUT_MESSAGE="Test message from local environment"
+export INPUT_COMMUNITY-ID=""  # Optional
+
+node index.js
+```
+
+## License
+
+MIT

@@ -10,13 +10,13 @@ jobs:
     steps:
       - name: x post step
         id: x
-        uses: captradeoff/x-post-action@v0.5
+        uses: captradeoff/x-post-action@v0.6
         with:
           appKey: ${{ secrets.X_APP_KEY }}
           appSecret: ${{ secrets.X_APP_SECRET }}
           accessToken: ${{ secrets.X_ACCESS_TOKEN }}
           accessSecret: ${{ secrets.X_ACCESS_SECRET }}
-          message: 'getting set up... first post created via the x api and github actions'
+          message: 'getting set up with the x api and github actions'
           community-id: 1903531139035476424
       - name: Get the output post-id
         run: echo "The post-id was ${{ steps.x.outputs.post-id }}"

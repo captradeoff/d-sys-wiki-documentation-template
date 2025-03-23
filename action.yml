@@ -1,0 +1,35 @@
+name: 'Twitter Post Action'
+description: 'GitHub Action to post tweets to Twitter, with optional community support'
+author: 'Your Name'
+
+inputs:
+  appKey:
+    description: 'Twitter API App Key'
+    required: true
+  appSecret:
+    description: 'Twitter API App Secret'
+    required: true
+  accessToken:
+    description: 'Twitter API Access Token'
+    required: true
+  accessSecret:
+    description: 'Twitter API Access Secret'
+    required: true
+  message:
+    description: 'The message to tweet'
+    required: true
+  community-id:
+    description: 'Optional Twitter Community ID to post to'
+    required: false
+
+outputs:
+  post-id:
+    description: 'The ID of the posted tweet'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
+
+branding:
+  icon: 'message-circle'
+  color: 'blue' 
