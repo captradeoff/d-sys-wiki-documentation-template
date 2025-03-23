@@ -20,15 +20,23 @@ jobs:
         run: |
           # Get the diff between the current commit and its parent, only for wiki/ directory
           DIFF=$(git diff HEAD^ HEAD -- wiki/)
-          # Trim the diff to a reasonable size (first 10000 characters)
-          TRIMMED_DIFF="${DIFF:0:10000}"
-          # Set the diff as an output
-          echo "diff<<EOF" >> $GITHUB_OUTPUT
-          echo "$TRIMMED_DIFF" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          # Check if diff is empty
+          if [ -z "$DIFF" ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in wiki directory. Skipping post to X."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            # Trim the diff to a reasonable size (first 10000 characters)
+            TRIMMED_DIFF="${DIFF:0:10000}"
+            # Set the diff as an output
+            echo "diff<<EOF" >> $GITHUB_OUTPUT
+            echo "$TRIMMED_DIFF" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
           
       - name: Explain Diff
         id: explain
+        if: steps.get-diff.outputs.has_changes == 'true'
         uses: captradeoff/openai-summarize-diff-action@v0.2
         with:
           diff: ${{ steps.get-diff.outputs.diff }}
@@ -36,6 +44,7 @@ jobs:
           
       - name: x post step
         id: x
+        if: steps.get-diff.outputs.has_changes == 'true'
         uses: captradeoff/x-post-action@v0.7
         with:
           appKey: ${{ secrets.X_APP_KEY }}
@@ -46,4 +55,5 @@ jobs:
           community-id: "1903531139035476424"
           
       - name: Get the output post-id
+        if: steps.get-diff.outputs.has_changes == 'true'
         run: echo "The post-id was ${{ steps.x.outputs.post-id }}"
