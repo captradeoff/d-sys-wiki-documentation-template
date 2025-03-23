@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: x post step
         id: x
-        uses: captradeoff/x-post-action@v0.4
+        uses: captradeoff/x-post-action@v0.5
         with:
           appKey: ${{ secrets.X_APP_KEY }}
           appSecret: ${{ secrets.X_APP_SECRET }}
