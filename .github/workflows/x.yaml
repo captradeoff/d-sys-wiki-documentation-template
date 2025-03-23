@@ -4,7 +4,7 @@ on:
     branches:
       - master 
 jobs:
-  x_post_job:
+  x_post_action_job:
     runs-on: ubuntu-latest
     name: post
     steps:
