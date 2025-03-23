@@ -1,16 +1,22 @@
 site_name: d-sys.wiki
 site_url: https://d-sys.wiki
-copyright: 'github/x: @captradeoff'
+copyright: "github/x: @captradeoff"
 site_author: captradeoff
-repo_url: https://github.com/captradeoff/d-sys-wiki  
+repo_url: https://github.com/captradeoff/d-sys-wiki
 edit_uri: edit/master/docs/
 docs_dir: wiki
 
 nav:
-    - home: 'index.md'
-    - fundamentals:
-       - 'what are distributed systems?': 'fundamentals/distributed-systems.md'
+  - home: "index.md"
+  - fundamentals:
+      - Index: "fundamentals/index.md"
+  - llms: "llms.txt"
 plugins:
+  - llmstxt:
+      files:
+        - output: llms.txt
+          inputs:
+            - '**.md'
   - search
   - git-revision-date
   - spellcheck:
@@ -24,3 +30,8 @@ theme:
     - navigation.top.cursor_animation.hide
     - revision.date
     - revision.history
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      permalink_title: Anchor link to this section for reference
