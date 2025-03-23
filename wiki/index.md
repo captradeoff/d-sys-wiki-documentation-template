@@ -28,4 +28,4 @@ in addition to simple casual explanations on how to architect and build distribu
 
 
 ### license
-[MIT license](about/license.md)
+[CC0 1.0](about/license.md)
