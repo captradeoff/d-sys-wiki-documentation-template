@@ -37,7 +37,7 @@ jobs:
       - name: Explain Diff
         id: explain
         if: steps.get-diff.outputs.has_changes == 'true'
-        uses: captradeoff/openai-summarize-diff-action@v0.7
+        uses: captradeoff/openai-summarize-diff-action@v0.8
         with:
           diff: ${{ steps.get-diff.outputs.diff }}
           apikey: ${{ secrets.OPENAI_APIKEY }}
