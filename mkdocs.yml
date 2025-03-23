@@ -12,7 +12,6 @@ nav:
       - Index: "fundamentals/index.md"
   - llms: "llms.txt"
   - rss: "feed_rss_updated.xml"
-  - license: "license.md"
   
 plugins:
   - rss
@@ -39,5 +38,5 @@ theme:
 markdown_extensions:
   - md_in_html
   - toc:
-      permalink: "#"
+      permalink: "⁂"
       permalink_title: Anchor link to this section for reference
