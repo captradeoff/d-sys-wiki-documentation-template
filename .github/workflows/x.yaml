@@ -5,20 +5,35 @@ on:
     branches:
       - master
 
-env:
-  DIFF: ${{ compare(github.base_ref, github.head_ref) }}
-
 jobs:
   post-diff-summary-to-x-community:
     runs-on: ubuntu-latest
     name: post-diff
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Get diff
+        id: get-diff
+        run: |
+          # Get the diff between the current commit and its parent, only for wiki/ directory
+          DIFF=$(git diff HEAD^ HEAD -- wiki/)
+          # Trim the diff to a reasonable size (first 10000 characters)
+          TRIMMED_DIFF="${DIFF:0:10000}"
+          # Set the diff as an output
+          echo "diff<<EOF" >> $GITHUB_OUTPUT
+          echo "$TRIMMED_DIFF" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          
       - name: Explain Diff
         id: explain
         uses: captradeoff/openai-summarize-diff-action@v0.2
         with:
-          diff: ${{ env.DIFF }}
+          diff: ${{ steps.get-diff.outputs.diff }}
           apikey: ${{ secrets.OPENAI_APIKEY }}
+          
       - name: x post step
         id: x
         uses: captradeoff/x-post-action@v0.7
@@ -27,7 +42,8 @@ jobs:
           appSecret: ${{ secrets.X_APP_SECRET }}
           accessToken: ${{ secrets.X_ACCESS_TOKEN }}
           accessSecret: ${{ secrets.X_ACCESS_SECRET }}
-          message: steps.explain.outputs.explanation
+          message: ${{ steps.explain.outputs.explanation }}
           community-id: "1903531139035476424"
+          
       - name: Get the output post-id
         run: echo "The post-id was ${{ steps.x.outputs.post-id }}"
