@@ -1,65 +1,63 @@
-# d-sys.wiki - all things distributed systems
+# 🚀 d-sys.wiki documentation template
 
 [![ci](https://github.com/captradeoff/d-sys-wiki/actions/workflows/ci.yml/badge.svg)](https://github.com/captradeoff/d-sys-wiki/actions/workflows/ci.yml)
 [![license: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![github stars](https://img.shields.io/github/stars/captradeoff/d-sys-wiki?style=social)](https://github.com/captradeoff/d-sys-wiki/stargazers)
-[![github forks](https://img.shields.io/github/forks/captradeoff/d-sys-wiki?style=social)](https://github.com/captradeoff/d-sys-wiki/network/members)
-[![twitter follow](https://img.shields.io/twitter/follow/captradeoff?style=social)](https://twitter.com/captradeoff)
+[![GitHub stars](https://img.shields.io/github/stars/captradeoff/d-sys-wiki-theme?style=social)](https://github.com/captradeoff/d-sys-wiki-theme/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/captradeoff/d-sys-wiki-theme?style=social)](https://github.com/captradeoff/d-sys-wiki-theme/network/members)
+[![Twitter Follow](https://img.shields.io/twitter/follow/captradeoff?style=social)](https://twitter.com/captradeoff)
 
-> your home for all things distributed systems. **[⭐ star this repo](#-support-this-project)** if you find it useful!
+> a beginner-friendly mkdocs template for creating beautiful documentation sites like [d-sys.wiki](https://d-sys.wiki). perfect for developers who want to quickly get started with documentation. **[⭐ star this repo](#-support-this-project)** if you find it useful!
 
 ## 📋 table of contents
 
-- [description](#-description)
-- [content](#-content)
-- [getting started](#-getting-started)
+- [overview](#-overview)
+- [features](#-features)
+- [quick start guide](#-quick-start-guide)
+- [customization steps](#-customization-steps)
+- [template structure](#-template-structure)
+- [advanced configuration](#-advanced-configuration)
+- [github actions setup](#-github-actions-setup)
 - [contributing](#-contributing)
-- [project structure](#️-project-structure)
 - [support this project](#-support-this-project)
-- [contact](#-contact)
 - [license](#-license)
 
-## 📝 description
+## 🔍 overview
 
-**d-sys.wiki** is a comprehensive resource for distributed systems knowledge. this repository contains the source for the [d-sys.wiki](https://d-sys.wiki) website, providing clear explanations, valuable resources, and practical tools for understanding and building distributed systems.
+this template provides everything you need to create a professional documentation site using mkdocs with the terminal theme, styled after [d-sys.wiki](https://d-sys.wiki). it's designed for beginners who want to:
 
-created to be easily consumed by both humans and AI, this wiki enhances distributed systems skills through accessible content and practical examples.
+- create beautiful documentation with minimal setup
+- deploy automatically with github actions
+- customize the look and feel to match their brand
+- get started quickly without extensive configuration
 
-## 📚 content
+## ✨ features
 
-- **simple explanations**: clear breakdowns of complex distributed systems concepts
-- **research access**: early access to pre-prints on distributed systems research
-- **practical examples**: case studies with reproducible code examples
-- **curated resources**: open source projects, software, and tools
-- **learning materials**: links to top books and talks in the field
-- **community-driven**: open to contributions from distributed systems experts
+- **beautiful terminal theme**: pre-configured terminal-style theme for a unique documentation experience
+- **github actions integration**: automatic building and deployment workflow
+- **seo optimized**: built-in seo best practices for better discoverability
+- **mobile responsive**: looks great on all devices
+- **easy customization**: simple files to modify for personalization
+- **plugin support**: pre-configured with essential mkdocs plugins
+- **beginner friendly**: clear instructions for quick setup
+- **rss support**: built-in rss feeds for content updates
+- **llms.txt generation**: automatic generation of llms.txt for ai discoverability
 
-## 🚀 getting started
+## 🚀 quick start guide
 
-### for readers
+### prerequisites
 
-visit [d-sys.wiki](https://d-sys.wiki) to access all content immediately - no setup required!
+- [python 3.x](https://www.python.org/downloads/)
+- [git](https://git-scm.com/downloads)
 
-### for contributors
+### installation
 
-the site is built with [mkdocs](https://www.mkdocs.org/) using the terminal theme.
-
-clone this wiki's style for your next docsite with the [d-sys.wiki documentation template](https://github.com/captradeoff/d-sys-wiki-documentation-template) for github pages.
-
-#### prerequisites
-
-- python 3.x
-- pip
-
-#### local setup
-
-1. clone the repo:
+1. **clone this template repository**:
    ```bash
-   git clone https://github.com/captradeoff/d-sys-wiki.git
-   cd d-sys-wiki
+   git clone https://github.com/captradeoff/d-sys-wiki-theme.git my-documentation
+   cd my-documentation
    ```
 
-2. install mkdocs and plugins:
+2. **install dependencies**:
    ```bash
    pip install mkdocs
    pip install mkdocs-terminal
@@ -69,72 +67,178 @@ clone this wiki's style for your next docsite with the [d-sys.wiki documentation
    pip install mkdocs-rss-plugin
    ```
 
-3. run dev server:
+3. **start the development server**:
    ```bash
    mkdocs serve
    ```
 
-4. open browser to `http://localhost:8000`
+4. **view your site** at `http://localhost:8000`
 
-## 📝 contributing
+## 🛠 customization steps
 
-we welcome contributions from the community! here's how you can help:
+follow these steps to transform this template into your own documentation site:
 
-1. **report issues**: [open an issue](https://github.com/captradeoff/d-sys-wiki/issues) if you find errors or have suggestions
+### 1. update site configuration
 
-2. **submit content**:
-   - fork the repo
-   - create a branch
-   - edit markdown in `wiki/`
-   - submit pull request
+edit `mkdocs.yml`:
+```yaml
+site_name: Your Site Name
+site_url: https://your-site-url.com
+copyright: "Your copyright message"
+site_author: your_username
+repo_url: https://github.com/your_username/your_repo
+```
 
-3. **contribution guidelines**:
-   - write clearly and concisely
-   - include practical examples where applicable
-   - cite sources for technical information
-   - follow the existing format and style
-   - keep explanations accessible to various skill levels
+### 2. set up your domain
 
-## 🏗️ project structure
+1. edit `docs/CNAME`:
+   ```
+   your-site-url.com
+   ```
+
+2. update `docs/robots.txt`:
+   ```
+   User-agent: *
+   Allow: /
+   
+   Sitemap: https://your-site-url.com/sitemap.xml
+   ```
+
+### 3. customize the theme
+
+1. **replace the favicon**:
+   - add your own favicon.ico to `docs/img/`
+
+2. **update the footer** in `theme/main.html`:
+   ```html
+   <table class="table table-striped table-hover">
+     <tbody>
+       <tr>
+         <td style="text-align: center">
+           <a href="https://your-community-link">join community</a>
+         </td>
+         <td style="text-align: center">
+           <a href="https://github.com/your_username/your_repo/issues">open an issue</a>
+         </td>
+         <td style="text-align: center">
+           <a href="https://twitter.com/your_username">follow on twitter</a>
+         </td>
+       </tr>
+       <!-- Additional rows as needed -->
+     </tbody>
+   </table>
+   ```
+
+3. **add your content**:
+   - place your markdown files in the `docs/` directory
+   - update `docs/index.md` with your landing page content
+
+### 4. configure github actions
+
+1. enable github pages in your repository settings:
+   - go to `Settings` > `Pages`
+   - select source: `GitHub Actions`
+
+2. commit and push your changes:
+   ```bash
+   git add .
+   git commit -m "Customize documentation site"
+   git push
+   ```
+
+3. github action will automatically build and deploy your site!
+
+## 🏗️ template structure
 
 ```
-d-sys-wiki/
-├── wiki/                  # docs source files
-│   ├── index.md           # home page
-│   ├── about/             # about section
-│   ├── fundamentals/      # concepts
-│   └── img/               # images
-├── mkdocs.yml             # config
-├── CNAME                  # domain config
-└── LICENSE                # license file
+my-documentation/
+├── docs/                  # Content source files
+│   ├── index.md           # Home page
+│   ├── CNAME              # Custom domain configuration
+│   ├── robots.txt         # SEO configuration
+│   ├── style.css          # Custom CSS
+│   └── img/               # Images and favicon
+├── theme/                 # Custom theme components
+│   └── main.html          # Footer and layout customizations
+├── mkdocs.yml             # Site configuration
+├── .github/               # GitHub Actions workflows
+└── LICENSE                # License information
 ```
+
+## ⚙️ advanced configuration
+
+### adding navigation
+
+edit the `nav` section in `mkdocs.yml`:
+
+```yaml
+nav:
+  - Home: "index.md"
+  - Getting Started: "getting-started.md"
+  - API Reference:
+      - Overview: "api/index.md"
+      - Authentication: "api/auth.md"
+```
+
+### changing theme colors
+
+the default theme is `gruvbox_dark`. you can change this in `mkdocs.yml`:
+
+```yaml
+theme:
+  name: terminal
+  custom_dir: theme
+  palette: nord  # Options: dracula, gruvbox_light, monokai, nord, zenburn
+```
+
+## 🔄 github actions setup
+
+this template includes a pre-configured github action workflow that:
+
+1. builds your mkdocs site
+2. deploys it to github pages
+3. generates rss feeds and llms.txt
+
+all you need to do is enable github pages in your repository settings!
+
+## 🤝 contributing
+
+contributions are welcome! here's how:
+
+1. **fork the repository**
+2. **create a feature branch**: `git checkout -b feature/amazing-feature`
+3. **make your changes**
+4. **commit**: `git commit -m 'Add amazing feature'`
+5. **push**: `git push origin feature/amazing-feature`
+6. **open a pull request**
 
 ## ⭐ support this project
 
-if you find this project useful, please consider:
+if you find this template useful:
 
-- ⭐ [starring the repository](https://github.com/captradeoff/d-sys-wiki/stargazers) on github
-- 🔄 [forking the repository](https://github.com/captradeoff/d-sys-wiki/fork) to contribute
-- 📢 sharing [d-sys.wiki](https://d-sys.wiki) with others in the distributed systems community
-- 🐛 [reporting bugs](https://github.com/captradeoff/d-sys-wiki/issues) or suggesting features
-- 💻 submitting pull requests to improve the content or documentation
-- 🤝 [joining our discord community](https://discord.gg/abnrNxa7J5) for discussions
+- **⭐ star this repository** on github
+- **🔄 fork it** and use it for your own projects
+- **📢 share it** with others who might find it helpful
+- **🐛 report issues** or suggest improvements
 
-your support helps maintain and improve this resource for everyone!
+your support helps maintain and improve this project!
 
-## 📬 contact
+## 🙏 Acknowledgments
 
-- github: [@captradeoff](https://github.com/captradeoff)
-- twitter/x: [@captradeoff](https://x.com/captradeoff)
-- x community: [join our community](https://x.com/i/communities/1903531139035476424)
-- discord: [join our server](https://discord.gg/abnrNxa7J5)
+This template is powered by amazing open-source tools:
+
+- [MkDocs](https://www.mkdocs.org/) - The core documentation framework
+- [MkDocs Terminal Theme](https://github.com/ntno/mkdocs-terminal) - Beautiful terminal-style theme
+- Plugins:
+  - [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin) - Shows last update dates
+  - [mkdocs-spellcheck-plugin](https://github.com/mprivat/mkdocs-spellcheck-plugin) - Spell checking for documentation
+  - [mkdocs-llmstxt](https://github.com/contextmachine/mkdocs-llmstxt) - LLMs.txt generation for AI discoverability
+  - [mkdocs-rss-plugin](https://github.com/Guts/mkdocs-rss-plugin) - RSS feed generation
 
 ## 📄 license
 
-[CC0-1.0](LICENSE) - dedicated to the public domain.
+this work is dedicated to the public domain under cc0 1.0.
 
 ---
 
-**[⬆ back to top](#d-syswiki---all-things-distributed-systems)**
-
-**[🌐 visit d-sys.wiki now](https://d-sys.wiki)**
+*built with ❤️ by [captradeoff](https://github.com/captradeoff). template based on [d-sys.wiki](https://d-sys.wiki).*

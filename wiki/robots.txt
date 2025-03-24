@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://d-sys.wiki/sitemap.xml

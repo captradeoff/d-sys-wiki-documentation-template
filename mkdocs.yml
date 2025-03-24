@@ -1,10 +1,10 @@
-site_name: d-sys.wiki
+site_name: d-sys.wiki documentation template site
 site_url: https://d-sys.wiki
-copyright: "this work is dedicated to the public domain under CC0 1.0."
+copyright: "This work is dedicated to the public domain under CC0 1.0."
 site_author: captradeoff
-repo_url: https://github.com/captradeoff/d-sys-wiki
+repo_url: https://github.com/captradeoff/d-sys-wiki-theme
 edit_uri: edit/master/docs/
-docs_dir: wiki
+docs_dir: docs
 
 nav:
   - home: "index.md"
@@ -57,5 +57,5 @@ extra_css:
 extra:
   social:
     image: wiki/img/captradeoff.png
-    description: "public domain distributed systems wiki with notes, research, and code"
-    title: "d-sys.wiki – all things distributed systems"
+    description: "a site created with the d-sys.wiki documentation template"
+    title: "d-sys.wiki documentation template site"
