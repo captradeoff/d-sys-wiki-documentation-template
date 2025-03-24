@@ -1,4 +1,6 @@
 ---
+title: "d-sys.wiki - all things distributed systems"
+description: "A comprehensive public domain wiki for distributed systems knowledge, featuring explanations, research, code examples, and resources designed for both human and AI consumption"
 hide:
     - revision_date
     - revision_history

@@ -24,5 +24,5 @@ jobs:
           path: .cache 
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs mkdocs-terminal mkdocs-git-revision-date-plugin 'mkdocs-spellcheck[symspellpy]' mkdocs-llmstxt mkdocs-rss-plugin
+      - run: pip install mkdocs mkdocs-terminal mkdocs-git-revision-date-plugin 'mkdocs-spellcheck[symspellpy]' mkdocs-llmstxt mkdocs-rss-plugin mkdocs-ultralytics-plugin
       - run: mkdocs gh-deploy --force

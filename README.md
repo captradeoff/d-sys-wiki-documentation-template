@@ -1,27 +1,50 @@
-# d-sys.wiki
+# d-sys.wiki - all things distributed systems
 
 [![ci](https://github.com/captradeoff/d-sys-wiki/actions/workflows/ci.yml/badge.svg)](https://github.com/captradeoff/d-sys-wiki/actions/workflows/ci.yml)
 [![license: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![github stars](https://img.shields.io/github/stars/captradeoff/d-sys-wiki?style=social)](https://github.com/captradeoff/d-sys-wiki/stargazers)
+[![github forks](https://img.shields.io/github/forks/captradeoff/d-sys-wiki?style=social)](https://github.com/captradeoff/d-sys-wiki/network/members)
+[![twitter follow](https://img.shields.io/twitter/follow/captradeoff?style=social)](https://twitter.com/captradeoff)
 
-**d-sys.wiki** is a resource for distributed systems. this repo contains the source for [d-sys.wiki](https://d-sys.wiki) website, providing explanations, resources, and tools for understanding and building distributed systems.
+> your home for all things distributed systems. **[⭐ star this repo](#-support-this-project)** if you find it useful!
+
+## 📋 table of contents
+
+- [description](#-description)
+- [content](#-content)
+- [getting started](#-getting-started)
+- [contributing](#-contributing)
+- [project structure](#️-project-structure)
+- [support this project](#-support-this-project)
+- [contact](#-contact)
+- [license](#-license)
+
+## 📝 description
+
+**d-sys.wiki** is a comprehensive resource for distributed systems knowledge. this repository contains the source for the [d-sys.wiki](https://d-sys.wiki) website, providing clear explanations, valuable resources, and practical tools for understanding and building distributed systems.
+
+created to be easily consumed by both humans and AI, this wiki enhances distributed systems skills through accessible content and practical examples.
 
 ## 📚 content
 
-- simple explanations of distributed systems concepts
-- pre-prints on distributed systems research
-- case studies with code examples
-- open source projects and tools
-- links to books and talks
+- **simple explanations**: clear breakdowns of complex distributed systems concepts
+- **research access**: early access to pre-prints on distributed systems research
+- **practical examples**: case studies with reproducible code examples
+- **curated resources**: open source projects, software, and tools
+- **learning materials**: links to top books and talks in the field
+- **community-driven**: open to contributions from distributed systems experts
 
 ## 🚀 getting started
 
 ### for readers
 
-visit [d-sys.wiki](https://d-sys.wiki) to access the content.
+visit [d-sys.wiki](https://d-sys.wiki) to access all content immediately - no setup required!
 
 ### for contributors
 
-built with [mkdocs](https://www.mkdocs.org/) using terminal theme.
+the site is built with [mkdocs](https://www.mkdocs.org/) using the terminal theme.
+
+clone this wiki's style for your next docsite with the [d-sys.wiki documentation template](https://github.com/captradeoff/d-sys-wiki-documentation-template) for github pages.
 
 #### prerequisites
 
@@ -55,7 +78,9 @@ built with [mkdocs](https://www.mkdocs.org/) using terminal theme.
 
 ## 📝 contributing
 
-1. **report issues**: [open an issue](https://github.com/captradeoff/d-sys-wiki/issues)
+we welcome contributions from the community! here's how you can help:
+
+1. **report issues**: [open an issue](https://github.com/captradeoff/d-sys-wiki/issues) if you find errors or have suggestions
 
 2. **submit content**:
    - fork the repo
@@ -63,11 +88,12 @@ built with [mkdocs](https://www.mkdocs.org/) using terminal theme.
    - edit markdown in `wiki/`
    - submit pull request
 
-3. **guidelines**:
-   - write clearly
-   - include examples
-   - cite sources
-   - follow existing format
+3. **contribution guidelines**:
+   - write clearly and concisely
+   - include practical examples where applicable
+   - cite sources for technical information
+   - follow the existing format and style
+   - keep explanations accessible to various skill levels
 
 ## 🏗️ project structure
 
@@ -80,18 +106,35 @@ d-sys-wiki/
 │   └── img/               # images
 ├── mkdocs.yml             # config
 ├── CNAME                  # domain config
-└── LICENSE                # mit license
+└── LICENSE                # license file
 ```
 
-## 📄 license
+## ⭐ support this project
 
-mit license - see [license](LICENSE) file.
+if you find this project useful, please consider:
+
+- ⭐ [starring the repository](https://github.com/captradeoff/d-sys-wiki/stargazers) on github
+- 🔄 [forking the repository](https://github.com/captradeoff/d-sys-wiki/fork) to contribute
+- 📢 sharing [d-sys.wiki](https://d-sys.wiki) with others in the distributed systems community
+- 🐛 [reporting bugs](https://github.com/captradeoff/d-sys-wiki/issues) or suggesting features
+- 💻 submitting pull requests to improve the content or documentation
+- 🤝 [joining our discord community](https://discord.gg/abnrNxa7J5) for discussions
+
+your support helps maintain and improve this resource for everyone!
 
 ## 📬 contact
 
 - github: [@captradeoff](https://github.com/captradeoff)
 - twitter/x: [@captradeoff](https://x.com/captradeoff)
+- x community: [join our community](https://x.com/i/communities/1903531139035476424)
+- discord: [join our server](https://discord.gg/abnrNxa7J5)
 
-## License
+## 📄 license
 
-MIT
+[CC0-1.0](LICENSE) - dedicated to the public domain.
+
+---
+
+**[⬆ back to top](#d-syswiki---all-things-distributed-systems)**
+
+**[🌐 visit d-sys.wiki now](https://d-sys.wiki)**

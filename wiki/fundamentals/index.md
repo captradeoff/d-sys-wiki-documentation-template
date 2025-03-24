@@ -1,3 +1,7 @@
+---
+title: "distributed systems fundamentals - d-sys.wiki"
+description: "A comprehensive guide to distributed systems fundamentals covering definitions, CAP theorem, architectures, core components, and key design considerations for building resilient and scalable systems"
+---
 # distributed systems fundamentals
 
 ## what are distributed systems?

@@ -1,6 +1,6 @@
 site_name: d-sys.wiki
 site_url: https://d-sys.wiki
-copyright: "This work is dedicated to the public domain under CC0 1.0."
+copyright: "this work is dedicated to the public domain under CC0 1.0."
 site_author: captradeoff
 repo_url: https://github.com/captradeoff/d-sys-wiki
 edit_uri: edit/master/docs/
@@ -12,14 +12,24 @@ nav:
       - Index: "fundamentals/index.md"
   - llms: "llms.txt"
   - rss: "feed_rss_updated.xml"
-  
+
 plugins:
+  - ultralytics:
+      verbose: True
+      enabled: True
+      default_image: "https://d-sys.wiki/img/captradeoff.jpg"
+      default_author: "@captradeoff"
+      add_desc: True
+      add_image: True
+      add_keywords: True
+      add_share_buttons: False
+      add_json_ld: True
   - rss
   - llmstxt:
       files:
         - output: llms.txt
           inputs:
-            - '**.md'
+            - "**.md"
   - search
   - git-revision-date
   - spellcheck:
@@ -43,3 +53,9 @@ markdown_extensions:
 
 extra_css:
   - style.css
+
+extra:
+  social:
+    image: wiki/img/captradeoff.png
+    description: "public domain distributed systems wiki with notes, research, and code"
+    title: "d-sys.wiki – all things distributed systems"
